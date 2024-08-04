@@ -11,7 +11,15 @@ const breadcrumbs = [
   }
 ]
 
-const apps = [
+interface IApps {
+  name: string
+  icon: string
+  link: string
+  bgColor?: string
+  color?: string
+}
+
+const apps: IApps[] = [
   {
     name: 'Auth',
     link: 'http://localhost:4111',
